@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<title>Zip Code</title>
@@ -8,6 +8,38 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="container">
+		<div class="input">
+			<div>
+				<h1>US Zipcode Requester</h1>
+				<p>Please enter a US Zipcode you would like infomation on.</p>
+				<p class="italic">Examples: 90210, 32801, or 86023</p>
+			</div>
+		
+			<div>
+				<form>
+					<fieldset>
+						<label for="zipcode">Zipcode:</label>
+						<input type="text" name="zipcode" id="zipcode"><br>
+						<input type="submit" id="submitInfo">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	
+		<div class="results">
+				<h2>Location Details</h2>
+				<ul>
+					<li>Zip Code Requested: <span id="inputInfo"></span></li>
+					<li>Place Name: <span id="placeName"></span></li>
+					<li>Longitude: <span id="longitude"></span></li>
+					<li>Latitude: <span id="latitude"></span></li>
+					<li>State: <span id="state"></span></li>
+					<li>State Abbreviation: <span id="stateAbbreviation"></span></li>
+				</ul>
+		</div>
+
+	</div>
 	
 	<script src="script.js"></script>
 </body>
